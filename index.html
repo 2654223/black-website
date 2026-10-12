@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Black 的个人作品集：医学图像安全、科研探索与 vibe coding。" />
+    <title>Black — Personal Archive</title>
+    <link rel="stylesheet" href="src/styles/site.css" />
+    <link rel="stylesheet" href="public/js/proof-carousel.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <div class="grain" aria-hidden="true"></div>
+      <div id="rain" class="rain" aria-hidden="true"></div>
+      <main id="app"></main>
+      <dialog id="welcome-modal" class="contact-modal welcome-modal" aria-labelledby="welcome-title" aria-describedby="welcome-description">
+        <button class="modal-close" id="welcome-close" type="button" aria-label="关闭使用说明">×</button>
+        <p class="detail-kicker">A LITTLE GUIDE / 使用说明</p>
+        <h2 id="welcome-title">欢迎来到我的小小宇宙</h2>
+        <p id="welcome-description" class="welcome-intro">五只小猫分别通往五个资料类别。你可以这样浏览：</p>
+        <ol class="welcome-steps">
+          <li><strong>选一只猫</strong><span>点击它，小猫会转到中间；再点一次，进入详情。</span></li>
+          <li><strong>转动星环</strong><span>拖动星环切换小猫。</span></li>
+          <li><strong>继续探索</strong><span>详情页可切换上一个、下一个类别，也能返回小猫星环。</span></li>
+          <li><strong>查看成果证明</strong><span>进入“关于我”，点击 001.3；用左右按钮切换图片，点击“查看完整图片”可放大查看。</span></li>
+        </ol>
+        <button class="welcome-start" id="welcome-start" type="button">开始浏览</button>
+      </dialog>
+    </div>
+    <script>window.SITE_BASE = '';</script>
+    <script src="content/profile/proofs.js"></script>
+    <script src="public/js/proof-carousel.js"></script>
+    <script src="src/app/main.js"></script>
+  </body>
+</html>

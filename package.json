@@ -1,0 +1,17 @@
+{
+  "name": "black-personal-archive",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "node --check src/app/main.js && node --check scripts/build.mjs",
+    "build": "node scripts/build.mjs"
+  },
+  "dependencies": {
+    "gsap": "^3.13.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}
